@@ -15,9 +15,9 @@ BG_COLOR = BLACK
 FG_COLOR = WHITE
 # configure hosts
 HOSTS = [
-    {"http://10.103.12.90:9988/": "GPU-90",},
-    {"http://10.103.12.92:9988/": "GPU-92",},
-    {"http://10.103.12.93:9988/": "GPU-93",}
+    {"http://xx.xx.xx.xx:9988/": "GPU-Server-A",},
+    {"http://xx.xx.xx.xx:9988/": "GPU-Server-B",},
+    {"http://xx.xx.xx.xx:9988/": "GPU-Server-C",}
 ]
 MAX_GPU_PER_HOST = 8
 
@@ -168,7 +168,7 @@ WIFI_Connect()
 count = 0
 flag = 0
 while True:
-    if state == 1:
+    if state == 0:
         if flag != 0:
             d.fill(BG_COLOR)
             flag = 0
