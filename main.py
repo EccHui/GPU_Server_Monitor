@@ -31,7 +31,7 @@ def WIFI_Connect():
     if not wlan.isconnected():
         print('connecting to network')
         # SSID and password for WIFI
-        wlan.connect('ZTE-uu36bh', 'lab1710lab1710')
+        wlan.connect('SSID', 'keword')
         while not wlan.isconnected():
             # lighten LED
             WIFI_LED.value(1)
